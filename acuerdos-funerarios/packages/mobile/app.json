@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "icon": "./assets/icon.png",
+    "android": {
+      "package": "com.acuerdosserfuncoop_x7k2.runable",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A0A"
+      },
+      "permissions": [
+        "RECORD_AUDIO"
+      ]
+    },
+    "extra": {
+      "applicationId": "com.acuerdosserfuncoop_x7k2.runable",
+      "apiUrl": "https://acuerdo-s3yciky-preview-4200.runable.site"
+    },
+    "ios": {
+      "bundleIdentifier": "com.acuerdosserfuncoop_x7k2.runable",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Necesitamos acceso al micrófono para grabar las conversaciones con los clientes."
+      }
+    },
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0A"
+    },
+    "name": "Grabacion Acuerdos SERFUNCOOP",
+    "slug": "acuerdos-serfuncoop",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Necesitamos acceso al micrófono para grabar las conversaciones con los clientes."
+        }
+      ]
+    ],
+    "scheme": "acuerdosserfuncoop"
+  }
+}
